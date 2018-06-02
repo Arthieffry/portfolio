@@ -1,12 +1,13 @@
 /* The side navigation menu */
 .sidenav {
+  z-index: +999;
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #111; /* Black*/
+  background-color: $black; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -16,15 +17,15 @@
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 10vh;
-  color: #818181;
+  font-size: 5vh;
+  color: $gray;
   display: block;
   transition: 0.3s;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: $white;
 }
 
 /* Position and style the close button (top right corner) */
@@ -32,7 +33,7 @@
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 10vh;
+  font-size: 5vh;
   margin-left: 50px;
   font-weight: bold;
 }
@@ -46,20 +47,22 @@
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 10vh;}
+  .sidenav a {font-size: 5vh;}
 }
 
-.btn-sidebar {
-  position: fixed;
+#btn-sidebar {
+  position: fixed !important;
+  z-index: +1;
   top: 10px;
   left: 10px;
-  color: #818181;
+  color: $gray;
   font-weight: bold;
   font-size: 8vh;
-  background-color: #111111;
+  background-color: $black;
   padding: 0 20px;
   border-radius: 2vh;
   &:hover {
-    color: #f1f1f1
+    color: $white
   }
 }
+
