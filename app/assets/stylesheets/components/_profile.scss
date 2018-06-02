@@ -1,23 +1,55 @@
 #profile-container {
   display: flex;
-  @media only screen and (max-width: 768px) {
+  background-color: $light-black;
+  @media only screen and (max-width: 500px) {
     flex-direction: column;
   };
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 500px) {
     flex-direction: row;
   };
   .left-part {
-    background: #111111;
-    border-right: solid 1px #F1F1F1;
+    background: $light-black;
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+    .photo-profile {
+      height: 50vh;
+      width: auto;
+    };
+    .logo-wagon {
+      left: -25vh;
+      position: absolute;
+    };
+    .photo-at {
+      position: absolute;
+      right: -24vh;
+      border-radius: 50%;
+    };
   }
   .right-part {
-    padding: 10vh;
-    background: #111111;
-    color: #F1F1F1;
-    overflow: scroll;
+    padding: 5vh 5vw;
+    background: $light-black;
+    color: $light-gray;
+    @media only screen and (min-width: 768px) {
+      height: 50vh;
+    };
     span {
       font-weight: bold;
-      color: #AE3526
+      color: $red
+    };
+    @media only screen and (max-width: 768px) {
+      h1, .icons {
+        text-align: center
+      };
+    }
+    a {
+      font-size: 50px;
+      margin: 0 10px;
+      text-decoration: none;
+      color: $light-gray;
+      &:hover {
+        color: $white
+      }
     }
   }
 }

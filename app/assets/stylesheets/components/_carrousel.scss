@@ -1,9 +1,12 @@
 .carrousel-custom {
-  background-color: #F1F1F1;
+  background-color: #f7f7f7;
 }
 
 .img-carrousel {
-  max-height: 100vh;
+  @media only screen and (min-width: 768px) {
+    height: 50%;
+    width: 50%;
+  };
   margin: auto
 }
 
@@ -12,9 +15,9 @@
     text-indent: 0;
     cursor: pointer;
     border: solid #AAAAAA 1px;
-    background-color: #F1F1F1;
+    background-color: #f7f7f7;
 }
 .carousel-indicators .active {
-    border: solid #111111 1px;
-    background-color: #111111;
+    border: solid #323643 1px;
+    background-color: #323643;
 }
