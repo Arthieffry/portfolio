@@ -1,17 +1,24 @@
 #profile-container {
   display: flex;
-  height: 100vh;
   @media only screen and (max-width: 768px) {
     flex-direction: column;
   };
   @media only screen and (min-width: 768px) {
     flex-direction: row;
   };
+  .left-part {
+    background: #111111;
+    border-right: solid 1px #F1F1F1;
+  }
   .right-part {
     padding: 10vh;
     background: #111111;
     color: #F1F1F1;
-    overflow: scroll
+    overflow: scroll;
+    span {
+      font-weight: bold;
+      color: #AE3526
+    }
   }
 }
 

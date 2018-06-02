@@ -1,6 +1,6 @@
 <div class="main-root">
 
-  <span class="btn-sidebar" onclick="openNav()">
+  <span id="btn-sidebar" onclick="openNav()">
     <%= icon('fas', 'angle-left') %>
   </span>
   <div class="root">
@@ -8,6 +8,8 @@
     <%= render 'components/banner' %>
 
     <%= render 'components/profile' %>
+
+    <%= render 'components/carrousel' %>
   </div>
 </div>
 
@@ -16,12 +18,14 @@
   <script>
     /* Open the sidenav */
     function openNav() {
-      document.getElementById("mySidenav").style.width = "100%";
+      document.getElementById("sidebar").style.width = "100%";
+      document.getElementById("btn-sidebar").style.display = "none";
     }
 
     /* Close/hide the sidenav */
     function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("sidebar").style.width = "0";
+      document.getElementById("btn-sidebar").style.display = "block";
     }
   </script>
 <% end %>
