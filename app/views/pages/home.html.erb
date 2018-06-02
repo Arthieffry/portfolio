@@ -1,2 +1,27 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="main-root">
+
+  <span class="btn-sidebar" onclick="openNav()">
+    <%= icon('fas', 'angle-left') %>
+  </span>
+  <div class="root">
+
+    <%= render 'components/banner' %>
+
+    <%= render 'components/profile' %>
+  </div>
+</div>
+
+
+<% content_for :sidebar_script do  %>
+  <script>
+    /* Open the sidenav */
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "100%";
+    }
+
+    /* Close/hide the sidenav */
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+<% end %>
