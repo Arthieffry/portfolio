@@ -10,14 +10,18 @@
   margin: auto
 }
 
+.carousel-indicators {
+  overflow: hidden;
+  z-index: 1 !important;
+}
 .carousel-indicators li {
-    display: inline-block;
-    text-indent: 0;
-    cursor: pointer;
-    border: solid #AAAAAA 1px;
-    background-color: #f7f7f7;
+  display: inline-block;
+  text-indent: 0;
+  cursor: pointer;
+  border: solid #AAAAAA 1px;
+  background-color: #f7f7f7;
 }
 .carousel-indicators .active {
-    border: solid #323643 1px;
-    background-color: #323643;
+  border: solid #323643 1px;
+  background-color: #323643;
 }

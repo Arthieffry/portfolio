@@ -33,18 +33,19 @@
     h1 {
       font-family: $sub-title;
     };
+    @media only screen and (max-width: 768px) {
+      h1, .icons {
+        text-align: center;
+      };
+    };
     @media only screen and (min-width: 768px) {
       height: 50vh;
+      overflow: scroll;
     };
     span {
       font-weight: bold;
       color: $red
     };
-    @media only screen and (max-width: 768px) {
-      h1, .icons {
-        text-align: center;
-      };
-    }
     a {
       font-size: 50px;
       margin: 0 10px;
