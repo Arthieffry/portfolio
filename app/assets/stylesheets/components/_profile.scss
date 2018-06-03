@@ -30,6 +30,9 @@
     padding: 5vh 5vw;
     background: $light-black;
     color: $light-gray;
+    h1 {
+      font-family: $sub-title;
+    };
     @media only screen and (min-width: 768px) {
       height: 50vh;
     };
@@ -39,7 +42,7 @@
     };
     @media only screen and (max-width: 768px) {
       h1, .icons {
-        text-align: center
+        text-align: center;
       };
     }
     a {

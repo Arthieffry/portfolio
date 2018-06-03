@@ -1,18 +1,14 @@
 <div class="main-root">
-
   <span id="btn-sidebar" onclick="openNav()">
     <%= icon('fas', 'angle-left') %>
   </span>
   <div class="root">
-
     <%= render 'components/banner' %>
-
     <%= render 'components/profile' %>
-
     <%= render 'components/carrousel' %>
+    <%= render 'components/contact' %>
   </div>
 </div>
-
 
 <% content_for :sidebar_script do  %>
   <script>
