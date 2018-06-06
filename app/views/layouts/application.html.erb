@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html>
+
   <head>
+    <!-- General -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Arthur Thieffry - Développement Web</title>
-    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.png" type="image/png">
-    <link rel="icon" sizes="32x32" href="favicon/favicon-32.png" type="image/png">
-    <link rel="icon" sizes="64x64" href="favicon/favicon-64.png" type="image/png">
-    <link rel="icon" sizes="96x96" href="favicon/favicon-96.png" type="image/png">
-    <link rel="icon" sizes="196x196" href="favicon/favicon-196.png" type="image/png">
-    <meta name="msapplication-TileImage" content="favicon/favicon-144.png">
-    <meta name="msapplication-TileColor" content="#FFFFFF">
-    <meta property="og:title" content="Arthur Thieffry - Développeur web fullstack en Ruby on Rails / ReactJS">
-    <meta name="description" content="Arthur Thieffry, développeur web fullstack en Ruby on Rails / ReactJS.">
-    <meta property="og:image" content="logoAT.svg">
-    <meta property="og:description" content="Arthur Thieffry - Développeur web fullstack en Ruby on Rails / ReactJS">
-    <meta property="og:site_name" content="Arthur Thieffry"/>
-    <meta property='og:url' content="http://arthieffry.com/" />
+    <title><%= DEFAULT_META["meta_title"] %></title>
+    <meta name="description" content="Arthur Thieffry - Développement web fullstack en Ruby on Rails / ReactJS.">
+    <%= favicon_link_tag 'favicon.png' %>
+    <!-- Facebook -->
+    <meta property="og:title" content="<%= DEFAULT_META["meta_title"] %>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<%= request.original_url %>" />
+    <meta property="og:image" content="<%= DEFAULT_META["meta_image"] %>" />
+    <meta property="og:description" content="<%= DEFAULT_META["meta_description"] %>" />
+    <meta property="og:site_name" content="<%= DEFAULT_META["meta_title"] %>" />
+
+    <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Arthur Thieffry">
-    <meta name="twitter:description" content="Développeur web fullstack en Ruby on Rails / ReactJS">
-    <meta name="twitter:image:src" content="logoAT.svg">
+    <meta name="twitter:title" content="<%= DEFAULT_META["meta_title"] %>">
+    <meta name="twitter:description" content="<%= DEFAULT_META["meta_description"] %>">
+    <meta name="twitter:image:src" content="<%= DEFAULT_META["meta_image"] %>">
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
-    <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
+
   <body>
     <%= render 'components/sidebar' %>
     <%= yield %>
@@ -34,4 +33,5 @@
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
   </body>
+
 </html>
