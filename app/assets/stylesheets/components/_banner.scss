@@ -9,7 +9,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(-225deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.6) 50%), image-url('bg.jpg');
+  background-image:
+    linear-gradient(-225deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.6) 50%),
+    url('http://res.cloudinary.com/arthieffry/image/upload/v1528990718/bg_spm9ac.jpg');
   h1 {
     @media only screen and (max-width: 500px) {
       font-size: 5rem;
