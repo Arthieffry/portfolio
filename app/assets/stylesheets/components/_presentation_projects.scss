@@ -1,0 +1,21 @@
+.jumbotron {
+  .page-description {
+    color: $platinium !important;
+  }
+  em {
+    color: $gray;
+  }
+}
+
+#images-container {
+  padding: 20px 50px;
+  color: blue;
+  em {
+    color: $gray;
+  }
+  .image-presentation {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+}
