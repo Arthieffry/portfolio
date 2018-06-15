@@ -1,2 +1,26 @@
-<div class="projects-container">
+<div id="projects-container">
+
+  <div class="jumbotron jumbotron-fluid projects-title">
+    <div class="container">
+      <h1 class="display-3">Projets</h1>
+      <p class="lead">Vous pouvez découvrir ci-dessous les différents porjets sur lequel j'ai déjà travaillé, ou toujours en cours</p>
+    </div>
+  </div>
+
+  <div class="container project-list">
+
+    <%= link_to gladius_path, target: "_blank" do %>
+      <div class="project-card col-12">
+        <%= cl_image_tag("Gladius_-_Dashboard_bc8jmc.png", class: "project-image") %>
+        <div class="project-description">
+          <h3>Gladius</h3>
+          <hr/>
+          <p>Carnet numérique d'entrainements personalisables, permettant de créer, choisir et réaliser ces propres exercices et programmes, afin de mieux suivre l'évolution de ses performances.</p>
+          <em>Actuellement plus en ligne</em>
+        </div>
+      </div>
+    <% end %>
+
+  </div>
+
 </div>
