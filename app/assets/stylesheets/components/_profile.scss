@@ -20,6 +20,7 @@
     color: $light-gray;
     h1 {
       font-family: $sub-title;
+      color: $white;
     };
     @media only screen and (max-width: 768px) {
       h1, .icons {

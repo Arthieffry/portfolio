@@ -1,12 +1,15 @@
-.contact-container {
+#contact-container {
   background-color: $light-black;
   color: $light-gray;
   padding: 10vh 10vw 10vh 10vw;
   text-align: center;
+  .contact-text {
+    margin-bottom: 20px
+  }
   a {
     color: $light-black;
     padding: 10px 20px;
     background-color: $white;
-    border-radius: 10px
+    border-radius: 10px;
   }
 }
